@@ -1,0 +1,12 @@
+CLASSIFICATION REPORT
+============================================================
+
+              precision    recall  f1-score   support
+
+    Baseline     1.0000    1.0000    1.0000        69
+  Inner Race     1.0000    1.0000    1.0000        34
+  Outer Race     1.0000    1.0000    1.0000       138
+
+    accuracy                         1.0000       241
+   macro avg     1.0000    1.0000    1.0000       241
+weighted avg     1.0000    1.0000    1.0000       241

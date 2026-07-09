@@ -1,0 +1,550 @@
+
+### Train MFPT ###
+
+Device: cuda
+Dataset: MFPT
+  Train: X=(1990, 2048), Y=(1990,)
+  Val:   X=(711, 2048), Y=(711,)
+  Test:  X=(997, 2048), Y=(997,)
+  Classes: [0 1 2]
+  Class weights (sqrt): [1.5256098508834839, 0.9665776491165161, 0.8164966106414795]
+Số lớp (C): 3
+Total parameters: 552,515
+Trainable parameters: 552,515
+  Loss: weighted CrossEntropy (sqrt inverse frequency)
+
+=================================================================
+  BẮT ĐẦU HUẤN LUYỆN - MFPT
+  Epochs: 1→200, Batch size: 64, LR: 0.001
+  Scheduler: ReduceLROnPlateau, eta_min: 1e-06
+  Mục tiêu train_loss: 3.00e-06
+=================================================================
+
+Epoch   1/200 | Train Loss: 0.320508±0.319569, Acc: 0.9302±0.1126 | Val Loss: 0.006459±0.002053, Acc: 1.0000±0.0000 | LR: 1.00e-03
+Epoch   5/200 | Train Loss: 0.005482±0.010003, Acc: 0.9990±0.0038 | Val Loss: 0.000798±0.000860, Acc: 1.0000±0.0000 | LR: 1.00e-03
+Epoch  10/200 | Train Loss: 0.002031±0.003252, Acc: 0.9995±0.0027 | Val Loss: 0.000329±0.000517, Acc: 1.0000±0.0000 | LR: 1.00e-03
+Epoch  15/200 | Train Loss: 0.011096±0.011359, Acc: 0.9970±0.0061 | Val Loss: 0.000371±0.000193, Acc: 1.0000±0.0000 | LR: 1.00e-03
+Epoch  20/200 | Train Loss: 0.001450±0.002057, Acc: 1.0000±0.0000 | Val Loss: 0.000037±0.000025, Acc: 1.0000±0.0000 | LR: 1.00e-03
+Epoch  25/200 | Train Loss: 0.000985±0.005310, Acc: 1.0000±0.0000 | Val Loss: 0.000009±0.000006, Acc: 1.0000±0.0000 | LR: 1.00e-03
+Epoch  30/200 | Train Loss: 0.001179±0.040487, Acc: 0.9995±0.0290 | Val Loss: 0.000006±0.000003, Acc: 1.0000±0.0000 | LR: 1.00e-03
+Epoch  35/200 | Train Loss: 0.000514±0.000874, Acc: 1.0000±0.0000 | Val Loss: 0.000016±0.000021, Acc: 1.0000±0.0000 | LR: 1.00e-03
+Epoch  40/200 | Train Loss: 0.000217±0.000206, Acc: 1.0000±0.0000 | Val Loss: 0.000007±0.000006, Acc: 1.0000±0.0000 | LR: 5.00e-04
+Epoch  45/200 | Train Loss: 0.000225±0.000385, Acc: 1.0000±0.0000 | Val Loss: 0.000013±0.000019, Acc: 1.0000±0.0000 | LR: 2.50e-04
+Epoch  50/200 | Train Loss: 0.000277±0.000459, Acc: 1.0000±0.0000 | Val Loss: 0.000008±0.000010, Acc: 1.0000±0.0000 | LR: 2.50e-04
+Epoch  55/200 | Train Loss: 0.000213±0.000626, Acc: 1.0000±0.0000 | Val Loss: 0.000007±0.000008, Acc: 1.0000±0.0000 | LR: 1.25e-04
+Epoch  60/200 | Train Loss: 0.001306±0.061958, Acc: 0.9995±0.0290 | Val Loss: 0.000006±0.000007, Acc: 1.0000±0.0000 | LR: 1.25e-04
+Epoch  65/200 | Train Loss: 0.000681±0.001945, Acc: 0.9995±0.0027 | Val Loss: 0.000027±0.000041, Acc: 1.0000±0.0000 | LR: 6.25e-05
+Epoch  70/200 | Train Loss: 0.000273±0.000851, Acc: 1.0000±0.0000 | Val Loss: 0.000010±0.000010, Acc: 1.0000±0.0000 | LR: 6.25e-05
+Epoch  75/200 | Train Loss: 0.000219±0.000201, Acc: 1.0000±0.0000 | Val Loss: 0.000013±0.000017, Acc: 1.0000±0.0000 | LR: 3.13e-05
+Epoch  80/200 | Train Loss: 0.000200±0.000181, Acc: 1.0000±0.0000 | Val Loss: 0.000009±0.000010, Acc: 1.0000±0.0000 | LR: 1.56e-05
+Epoch  85/200 | Train Loss: 0.000299±0.000356, Acc: 1.0000±0.0000 | Val Loss: 0.000015±0.000019, Acc: 1.0000±0.0000 | LR: 7.81e-06
+Epoch  90/200 | Train Loss: 0.000150±0.000402, Acc: 1.0000±0.0000 | Val Loss: 0.000012±0.000015, Acc: 1.0000±0.0000 | LR: 3.91e-06
+Epoch  95/200 | Train Loss: 0.000505±0.007852, Acc: 1.0000±0.0000 | Val Loss: 0.000017±0.000025, Acc: 1.0000±0.0000 | LR: 1.95e-06
+Epoch 100/200 | Train Loss: 0.000355±0.000874, Acc: 1.0000±0.0000 | Val Loss: 0.000016±0.000023, Acc: 1.0000±0.0000 | LR: 1.95e-06
+Epoch 105/200 | Train Loss: 0.000287±0.001660, Acc: 1.0000±0.0000 | Val Loss: 0.000007±0.000006, Acc: 1.0000±0.0000 | LR: 9.77e-07
+Epoch 110/200 | Train Loss: 0.000281±0.000423, Acc: 1.0000±0.0000 | Val Loss: 0.000008±0.000007, Acc: 1.0000±0.0000 | LR: 4.88e-07
+Epoch 115/200 | Train Loss: 0.000332±0.000864, Acc: 1.0000±0.0000 | Val Loss: 0.000012±0.000016, Acc: 1.0000±0.0000 | LR: 2.44e-07
+Epoch 120/200 | Train Loss: 0.000168±0.000183, Acc: 1.0000±0.0000 | Val Loss: 0.000009±0.000010, Acc: 1.0000±0.0000 | LR: 1.22e-07
+Epoch 125/200 | Train Loss: 0.000366±0.007392, Acc: 1.0000±0.0000 | Val Loss: 0.000007±0.000006, Acc: 1.0000±0.0000 | LR: 6.10e-08
+Epoch 130/200 | Train Loss: 0.000281±0.000372, Acc: 1.0000±0.0000 | Val Loss: 0.000012±0.000014, Acc: 1.0000±0.0000 | LR: 6.10e-08
+Epoch 135/200 | Train Loss: 0.000193±0.000226, Acc: 1.0000±0.0000 | Val Loss: 0.000011±0.000012, Acc: 1.0000±0.0000 | LR: 3.05e-08
+Epoch 140/200 | Train Loss: 0.000419±0.001041, Acc: 1.0000±0.0000 | Val Loss: 0.000015±0.000021, Acc: 1.0000±0.0000 | LR: 1.53e-08
+Epoch 145/200 | Train Loss: 0.000203±0.000337, Acc: 1.0000±0.0000 | Val Loss: 0.000008±0.000007, Acc: 1.0000±0.0000 | LR: 1.53e-08
+Epoch 150/200 | Train Loss: 0.000174±0.000183, Acc: 1.0000±0.0000 | Val Loss: 0.000012±0.000015, Acc: 1.0000±0.0000 | LR: 1.53e-08
+Epoch 155/200 | Train Loss: 0.000457±0.001009, Acc: 1.0000±0.0000 | Val Loss: 0.000017±0.000025, Acc: 1.0000±0.0000 | LR: 1.53e-08
+Epoch 160/200 | Train Loss: 0.000246±0.000203, Acc: 1.0000±0.0000 | Val Loss: 0.000012±0.000016, Acc: 1.0000±0.0000 | LR: 1.53e-08
+Epoch 165/200 | Train Loss: 0.000165±0.000290, Acc: 1.0000±0.0000 | Val Loss: 0.000007±0.000007, Acc: 1.0000±0.0000 | LR: 1.53e-08
+Epoch 170/200 | Train Loss: 0.001141±0.053656, Acc: 0.9995±0.0290 | Val Loss: 0.000008±0.000008, Acc: 1.0000±0.0000 | LR: 1.53e-08
+Epoch 175/200 | Train Loss: 0.000204±0.000317, Acc: 1.0000±0.0000 | Val Loss: 0.000013±0.000018, Acc: 1.0000±0.0000 | LR: 1.53e-08
+Epoch 180/200 | Train Loss: 0.000190±0.000250, Acc: 1.0000±0.0000 | Val Loss: 0.000009±0.000010, Acc: 1.0000±0.0000 | LR: 1.53e-08
+Epoch 185/200 | Train Loss: 0.000313±0.000700, Acc: 1.0000±0.0000 | Val Loss: 0.000007±0.000007, Acc: 1.0000±0.0000 | LR: 1.53e-08
+Epoch 190/200 | Train Loss: 0.000216±0.000241, Acc: 1.0000±0.0000 | Val Loss: 0.000007±0.000007, Acc: 1.0000±0.0000 | LR: 1.53e-08
+Epoch 195/200 | Train Loss: 0.000214±0.000242, Acc: 1.0000±0.0000 | Val Loss: 0.000010±0.000012, Acc: 1.0000±0.0000 | LR: 1.53e-08
+Epoch 200/200 | Train Loss: 0.000167±0.000156, Acc: 1.0000±0.0000 | Val Loss: 0.000007±0.000006, Acc: 1.0000±0.0000 | LR: 1.53e-08
+Đã load lại model tốt nhất (val_loss=0.0000)
+
+=================================================================
+  ĐÁNH GIÁ CUỐI (best model — min val_loss toàn bộ epoch)
+=================================================================
+  Train: Loss=0.000032±0.000054 | Acc=1.0000±0.0000 (100.00%)
+  Val:   Loss=0.000007±0.000006 | Acc=1.0000±0.0000 (100.00%)
+  Test:  Loss=1.157128±1.735347 | Acc=0.7422±0.3841 (74.22%)
+
+  Classification Report:
+              precision    recall  f1-score   support
+
+    Baseline     0.5534    1.0000    0.7125       285
+  Inner Race     0.8402    1.0000    0.9132       142
+  Outer Race     1.0000    0.5491    0.7089       570
+
+    accuracy                         0.7422       997
+   macro avg     0.7979    0.8497    0.7782       997
+weighted avg     0.8496    0.7422    0.7391       997
+
+
+  Model đã lưu tại: D:\Do_An\Source\Software\saved_models\mfpt\cnn_gru_mfpt.pth
+
+─────────────────────────────────────────────────────────────────
+  LƯU KẾT QUẢ TRACKING
+─────────────────────────────────────────────────────────────────
+  [Saved] D:\Do_An\Source\Software\saved_models\mfpt\training_curves.png
+  [Saved] D:\Do_An\Source\Software\saved_models\mfpt\confusion_matrix.png
+  [Saved] D:\Do_An\Source\Software\saved_models\mfpt\lr_schedule.png
+  [Saved] D:\Do_An\Source\Software\saved_models\mfpt\final_metrics.png
+  [Saved] D:\Do_An\Source\Software\saved_models\mfpt\classification_report.txt
+  [Saved] D:\Do_An\Source\Software\saved_models\mfpt\training_results.json
+
+  Tất cả kết quả đã lưu tại: D:\Do_An\Source\Software\saved_models\mfpt
+    - training_curves.png      (Loss & Accuracy curves theo epoch)
+    - final_metrics.png        (Bar chart Train/Val/Test ± std)
+    - confusion_matrix.png     (Confusion Matrix heatmap)
+    - lr_schedule.png          (Learning Rate schedule)
+    - classification_report.txt (Precision/Recall/F1)
+    - training_results.json    (Toàn bộ history + metrics)
+    - cnn_gru_mfpt.pth (Model weights)
+
+=================================================================
+  HOÀN TẤT
+=================================================================
+### MFPT done: acc=0.7422 (11.9 min) ###
+
+### Train MERGED ###
+
+Device: cuda
+Dataset: MERGED
+  Train: X=(25170, 2048), Y=(25170,)
+  Val:   X=(5492, 2048), Y=(5492,)
+  Test:  X=(5329, 2048), Y=(5329,)
+  Classes: [0 1 2 3]
+  Class weights (sqrt): [1.175350546836853, 1.0013136863708496, 0.7886525988578796, 1.2208224534988403]
+Số lớp (C): 4
+Total parameters: 552,580
+Trainable parameters: 552,580
+  Loss: weighted CrossEntropy (sqrt inverse frequency)
+
+=================================================================
+  BẮT ĐẦU HUẤN LUYỆN - MERGED
+  Epochs: 1→200, Batch size: 64, LR: 0.001
+  Scheduler: ReduceLROnPlateau, eta_min: 1e-06
+  Mục tiêu train_loss: 3.00e-06
+=================================================================
+
+Epoch   1/200 | Train Loss: 0.476561±0.224408, Acc: 0.7755±0.1142 | Val Loss: 0.368370±0.684543, Acc: 0.8485±0.2181 | LR: 1.00e-03
+Epoch   5/200 | Train Loss: 0.048033±0.051635, Acc: 0.9833±0.0207 | Val Loss: 0.346039±1.254591, Acc: 0.9290±0.1942 | LR: 1.00e-03
+Epoch  10/200 | Train Loss: 0.016728±0.027937, Acc: 0.9944±0.0107 | Val Loss: 0.436475±1.479917, Acc: 0.9223±0.2153 | LR: 1.00e-03
+Epoch  15/200 | Train Loss: 0.008468±0.021559, Acc: 0.9977±0.0072 | Val Loss: 0.377625±1.715720, Acc: 0.9472±0.1773 | LR: 5.00e-04
+Epoch  20/200 | Train Loss: 0.003491±0.013276, Acc: 0.9988±0.0046 | Val Loss: 0.370603±1.556394, Acc: 0.9454±0.1734 | LR: 5.00e-04
+Epoch  25/200 | Train Loss: 0.000769±0.006040, Acc: 0.9998±0.0019 | Val Loss: 0.351502±2.041888, Acc: 0.9683±0.1390 | LR: 2.50e-04
+Epoch  30/200 | Train Loss: 0.000431±0.002975, Acc: 0.9999±0.0014 | Val Loss: 0.421322±2.134381, Acc: 0.9567±0.1510 | LR: 1.25e-04
+Epoch  35/200 | Train Loss: 0.000356±0.002382, Acc: 0.9998±0.0016 | Val Loss: 0.411006±2.149080, Acc: 0.9607±0.1517 | LR: 6.25e-05
+Epoch  40/200 | Train Loss: 0.000064±0.000190, Acc: 1.0000±0.0000 | Val Loss: 0.430559±2.244115, Acc: 0.9590±0.1477 | LR: 3.13e-05
+Epoch  45/200 | Train Loss: 0.000100±0.000927, Acc: 0.9999±0.0011 | Val Loss: 0.447703±2.437371, Acc: 0.9627±0.1507 | LR: 1.56e-05
+Epoch  50/200 | Train Loss: 0.000035±0.000091, Acc: 1.0000±0.0000 | Val Loss: 0.463907±2.527337, Acc: 0.9623±0.1527 | LR: 1.56e-05
+Epoch  55/200 | Train Loss: 0.000032±0.000109, Acc: 1.0000±0.0000 | Val Loss: 0.455020±2.509556, Acc: 0.9639±0.1475 | LR: 7.81e-06
+Epoch  60/200 | Train Loss: 0.000048±0.000187, Acc: 1.0000±0.0000 | Val Loss: 0.461154±2.524159, Acc: 0.9636±0.1509 | LR: 3.91e-06
+Epoch  65/200 | Train Loss: 0.000065±0.000687, Acc: 1.0000±0.0008 | Val Loss: 0.449145±2.490297, Acc: 0.9649±0.1453 | LR: 1.95e-06
+Epoch  70/200 | Train Loss: 0.000023±0.000224, Acc: 1.0000±0.0000 | Val Loss: 0.477705±2.579430, Acc: 0.9623±0.1542 | LR: 9.77e-07
+Epoch  75/200 | Train Loss: 0.000025±0.000103, Acc: 1.0000±0.0000 | Val Loss: 0.464685±2.560514, Acc: 0.9636±0.1485 | LR: 4.88e-07
+Epoch  80/200 | Train Loss: 0.000036±0.000748, Acc: 1.0000±0.0000 | Val Loss: 0.471047±2.580182, Acc: 0.9638±0.1491 | LR: 4.88e-07
+Epoch  85/200 | Train Loss: 0.000074±0.000520, Acc: 1.0000±0.0000 | Val Loss: 0.458341±2.537646, Acc: 0.9645±0.1462 | LR: 2.44e-07
+Epoch  90/200 | Train Loss: 0.000030±0.000112, Acc: 1.0000±0.0000 | Val Loss: 0.464520±2.551680, Acc: 0.9638±0.1495 | LR: 1.22e-07
+Epoch  95/200 | Train Loss: 0.000030±0.000227, Acc: 1.0000±0.0000 | Val Loss: 0.457370±2.528379, Acc: 0.9643±0.1459 | LR: 6.10e-08
+Epoch 100/200 | Train Loss: 0.000054±0.000509, Acc: 1.0000±0.0000 | Val Loss: 0.456140±2.502736, Acc: 0.9643±0.1463 | LR: 3.05e-08
+Epoch 105/200 | Train Loss: 0.000024±0.000086, Acc: 1.0000±0.0000 | Val Loss: 0.475106±2.583243, Acc: 0.9627±0.1517 | LR: 1.53e-08
+Epoch 110/200 | Train Loss: 0.000027±0.000122, Acc: 1.0000±0.0000 | Val Loss: 0.444577±2.507351, Acc: 0.9658±0.1449 | LR: 1.53e-08
+Epoch 115/200 | Train Loss: 0.000018±0.000053, Acc: 1.0000±0.0000 | Val Loss: 0.459667±2.522784, Acc: 0.9638±0.1471 | LR: 1.53e-08
+Epoch 120/200 | Train Loss: 0.000075±0.000956, Acc: 1.0000±0.0008 | Val Loss: 0.463748±2.547085, Acc: 0.9641±0.1489 | LR: 1.53e-08
+Epoch 125/200 | Train Loss: 0.000031±0.000139, Acc: 1.0000±0.0000 | Val Loss: 0.463221±2.549857, Acc: 0.9647±0.1481 | LR: 1.53e-08
+Epoch 130/200 | Train Loss: 0.000056±0.000472, Acc: 1.0000±0.0000 | Val Loss: 0.461204±2.548432, Acc: 0.9647±0.1468 | LR: 1.53e-08
+Epoch 135/200 | Train Loss: 0.000085±0.000663, Acc: 1.0000±0.0000 | Val Loss: 0.450788±2.512411, Acc: 0.9650±0.1458 | LR: 1.53e-08
+Epoch 140/200 | Train Loss: 0.000031±0.000168, Acc: 1.0000±0.0000 | Val Loss: 0.468589±2.570761, Acc: 0.9638±0.1484 | LR: 1.53e-08
+Epoch 145/200 | Train Loss: 0.000069±0.000488, Acc: 1.0000±0.0000 | Val Loss: 0.469774±2.552111, Acc: 0.9625±0.1511 | LR: 1.53e-08
+Epoch 150/200 | Train Loss: 0.000078±0.001049, Acc: 1.0000±0.0008 | Val Loss: 0.471684±2.580023, Acc: 0.9639±0.1491 | LR: 1.53e-08
+Epoch 155/200 | Train Loss: 0.000033±0.000138, Acc: 1.0000±0.0000 | Val Loss: 0.450601±2.492898, Acc: 0.9652±0.1455 | LR: 1.53e-08
+Epoch 160/200 | Train Loss: 0.000029±0.000093, Acc: 1.0000±0.0000 | Val Loss: 0.463209±2.523454, Acc: 0.9632±0.1499 | LR: 1.53e-08
+Epoch 165/200 | Train Loss: 0.000040±0.000731, Acc: 1.0000±0.0000 | Val Loss: 0.467101±2.562141, Acc: 0.9639±0.1486 | LR: 1.53e-08
+Epoch 170/200 | Train Loss: 0.000023±0.000056, Acc: 1.0000±0.0000 | Val Loss: 0.464718±2.534551, Acc: 0.9627±0.1496 | LR: 1.53e-08
+Epoch 175/200 | Train Loss: 0.000031±0.000124, Acc: 1.0000±0.0000 | Val Loss: 0.478040±2.580375, Acc: 0.9619±0.1527 | LR: 1.53e-08
+Epoch 180/200 | Train Loss: 0.000069±0.000798, Acc: 1.0000±0.0008 | Val Loss: 0.460272±2.540029, Acc: 0.9647±0.1466 | LR: 1.53e-08
+Epoch 185/200 | Train Loss: 0.000037±0.000289, Acc: 1.0000±0.0000 | Val Loss: 0.474496±2.582588, Acc: 0.9629±0.1511 | LR: 1.53e-08
+Epoch 190/200 | Train Loss: 0.000030±0.000114, Acc: 1.0000±0.0000 | Val Loss: 0.468151±2.566014, Acc: 0.9639±0.1479 | LR: 1.53e-08
+Epoch 195/200 | Train Loss: 0.000043±0.000305, Acc: 1.0000±0.0000 | Val Loss: 0.453277±2.537140, Acc: 0.9656±0.1449 | LR: 1.53e-08
+Epoch 200/200 | Train Loss: 0.000026±0.000100, Acc: 1.0000±0.0000 | Val Loss: 0.462989±2.546954, Acc: 0.9639±0.1481 | LR: 1.53e-08
+Đã load lại model tốt nhất (val_loss=0.2813)
+
+=================================================================
+  ĐÁNH GIÁ CUỐI (best model — min val_loss toàn bộ epoch)
+=================================================================
+  Train: Loss=0.000000±0.000001 | Acc=1.0000±0.0000 (100.00%)
+  Val:   Loss=0.462989±2.546954 | Acc=0.9639±0.1481 (96.39%)
+  Test:  Loss=0.287388±1.528755 | Acc=0.9724±0.1437 (97.24%)
+
+  Classification Report:
+              precision    recall  f1-score   support
+
+      Normal     0.9492    0.9986    0.9733       711
+          IR     0.9544    1.0000    0.9766      1380
+          OR     1.0000    0.9365    0.9672      2298
+        Ball     0.9563    1.0000    0.9776       940
+
+    accuracy                         0.9724      5329
+   macro avg     0.9650    0.9838    0.9737      5329
+weighted avg     0.9737    0.9724    0.9723      5329
+
+
+  Model đã lưu tại: D:\Do_An\Source\Software\saved_models\merged\cnn_gru_merged.pth
+
+─────────────────────────────────────────────────────────────────
+  LƯU KẾT QUẢ TRACKING
+─────────────────────────────────────────────────────────────────
+  [Saved] D:\Do_An\Source\Software\saved_models\merged\training_curves.png
+  [Saved] D:\Do_An\Source\Software\saved_models\merged\confusion_matrix.png
+  [Saved] D:\Do_An\Source\Software\saved_models\merged\lr_schedule.png
+D:\Do_An\Source\Software\train_model.py:429: UserWarning: Tight layout not applied. The bottom and top margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  [Saved] D:\Do_An\Source\Software\saved_models\merged\final_metrics.png
+  [Saved] D:\Do_An\Source\Software\saved_models\merged\classification_report.txt
+  [Saved] D:\Do_An\Source\Software\saved_models\merged\training_results.json
+
+  Tất cả kết quả đã lưu tại: D:\Do_An\Source\Software\saved_models\merged
+    - training_curves.png      (Loss & Accuracy curves theo epoch)
+    - final_metrics.png        (Bar chart Train/Val/Test ± std)
+    - confusion_matrix.png     (Confusion Matrix heatmap)
+    - lr_schedule.png          (Learning Rate schedule)
+    - classification_report.txt (Precision/Recall/F1)
+    - training_results.json    (Toàn bộ history + metrics)
+    - cnn_gru_merged.pth (Model weights)
+
+=================================================================
+  HOÀN TẤT
+=================================================================
+### MERGED done: acc=0.9724 (139.9 min) ###
+  [SKIP] S1 (cwru → cwru)
+
+=================================================================
+  S2_CWRU_TO_MFPT  |  device=cuda
+=================================================================
+  Train (19022, 2048)  Val (4106, 2048)  Test (241, 2048)
+  num_classes=4  train_labels=[0, 1, 2, 3]  test_labels=[0, 1, 2]
+  Trainable params: 552,580
+  class_weights: [1.3534610271453857, 1.0620568990707397, 0.7715766429901123, 1.0613019466400146]
+
+  Epochs: 200  Batch: 64  LR: 0.001
+  Epoch   1/200 | train loss=0.4063 acc=0.8088 | val loss=0.4173 acc=0.8166 | lr=1.00e-03
+  Epoch  10/200 | train loss=0.0177 acc=0.9937 | val loss=0.3325 acc=0.9467 | lr=9.94e-04
+  Epoch  20/200 | train loss=0.0108 acc=0.9970 | val loss=0.2883 acc=0.9635 | lr=9.76e-04
+  Epoch  30/200 | train loss=0.0001 acc=1.0000 | val loss=0.3581 acc=0.9649 | lr=9.46e-04
+  Epoch  40/200 | train loss=0.0018 acc=0.9993 | val loss=0.2297 acc=0.9666 | lr=9.05e-04
+  Epoch  50/200 | train loss=0.0021 acc=0.9994 | val loss=0.3327 acc=0.9569 | lr=8.54e-04
+  Epoch  60/200 | train loss=0.0007 acc=0.9998 | val loss=0.3160 acc=0.9652 | lr=7.94e-04
+  Epoch  70/200 | train loss=0.0001 acc=1.0000 | val loss=0.5678 acc=0.9535 | lr=7.27e-04
+  Epoch  80/200 | train loss=0.0005 acc=0.9999 | val loss=0.4534 acc=0.9537 | lr=6.55e-04
+  Epoch  90/200 | train loss=0.0000 acc=1.0000 | val loss=0.4185 acc=0.9640 | lr=5.79e-04
+  Epoch 100/200 | train loss=0.0001 acc=1.0000 | val loss=0.4653 acc=0.9666 | lr=5.01e-04
+  Epoch 110/200 | train loss=0.0002 acc=0.9999 | val loss=0.4661 acc=0.9627 | lr=4.22e-04
+  Epoch 120/200 | train loss=0.0000 acc=1.0000 | val loss=0.5106 acc=0.9610 | lr=3.46e-04
+  Epoch 130/200 | train loss=0.0000 acc=1.0000 | val loss=0.5449 acc=0.9564 | lr=2.74e-04
+  Epoch 140/200 | train loss=0.0002 acc=0.9999 | val loss=0.6573 acc=0.9435 | lr=2.07e-04
+  Epoch 150/200 | train loss=0.0000 acc=1.0000 | val loss=0.6171 acc=0.9518 | lr=1.47e-04
+  Epoch 160/200 | train loss=0.0000 acc=1.0000 | val loss=0.7288 acc=0.9484 | lr=9.64e-05
+  Epoch 170/200 | train loss=0.0000 acc=1.0000 | val loss=0.5125 acc=0.9608 | lr=5.54e-05
+  Epoch 180/200 | train loss=0.0000 acc=1.0000 | val loss=0.5079 acc=0.9618 | lr=2.54e-05
+  Epoch 190/200 | train loss=0.0000 acc=1.0000 | val loss=0.5703 acc=0.9574 | lr=7.15e-06
+  Epoch 200/200 | train loss=0.0000 acc=1.0000 | val loss=0.5466 acc=0.9608 | lr=1.00e-06
+
+  Best val_loss=0.213849 → loaded
+  Train : loss=0.0009 acc=0.9996 (99.96%)
+  Val   : loss=0.2138 acc=0.9535 (95.35%)
+  Test  : loss=15.6129 acc=0.0000 (0.00%)
+
+  Classification Report (test=MFPT):
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+              precision    recall  f1-score   support
+
+      Normal     0.0000    0.0000    0.0000      69.0
+          IR     0.0000    0.0000    0.0000      34.0
+          OR     0.0000    0.0000    0.0000     138.0
+        Ball     0.0000    0.0000    0.0000       0.0
+
+    accuracy                         0.0000     241.0
+   macro avg     0.0000    0.0000    0.0000     241.0
+weighted avg     0.0000    0.0000    0.0000     241.0
+
+  [Saved] D:\Do_An\Source\Software\saved_models\S2_cwru_to_mfpt\training_curves.png
+D:\Do_An\Source\Software\train_model.py:281: RuntimeWarning: invalid value encountered in divide
+  cm_percent = cm.astype('float') / cm.sum(axis=1, keepdims=True) * 100
+  [Saved] D:\Do_An\Source\Software\saved_models\S2_cwru_to_mfpt\confusion_matrix.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S2_cwru_to_mfpt\lr_schedule.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S2_cwru_to_mfpt\final_metrics.png
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+  [Saved] D:\Do_An\Source\Software\saved_models\S2_cwru_to_mfpt\classification_report.txt
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Do_An\Source\Software\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1833: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+  [Saved] D:\Do_An\Source\Software\saved_models\S2_cwru_to_mfpt\training_results.json
+  Đã lưu → D:\Do_An\Source\Software\saved_models\S2_cwru_to_mfpt
+  [SKIP] S3 (cwru → paderborn)
+
+=================================================================
+  S4_MFPT_TO_CWRU  |  device=cuda
+=================================================================
+    [filter] Bỏ 940 mẫu nhãn >= 3 (ngoài class space của model)
+  Train (478, 2048)  Val (171, 2048)  Test (2934, 2048)
+  num_classes=3  train_labels=[0, 1, 2]  test_labels=[0, 1, 2]
+  Trainable params: 552,515
+  class_weights: [1.5195982456207275, 0.9681192636489868, 0.8164966106414795]
+
+  Epochs: 200  Batch: 64  LR: 0.001
+  Epoch   1/200 | train loss=0.8039 acc=0.8138 | val loss=1.0817 acc=0.1988 | lr=1.00e-03
+  Epoch  10/200 | train loss=0.0011 acc=1.0000 | val loss=0.0003 acc=1.0000 | lr=9.94e-04
+  Epoch  20/200 | train loss=0.0004 acc=1.0000 | val loss=0.0001 acc=1.0000 | lr=9.76e-04
+  Epoch  30/200 | train loss=0.0002 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=9.46e-04
+  Epoch  40/200 | train loss=0.0002 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=9.05e-04
+  Epoch  50/200 | train loss=0.0002 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=8.54e-04
+  Epoch  60/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=7.94e-04
+  Epoch  70/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=7.27e-04
+  Epoch  80/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=6.55e-04
+  Epoch  90/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=5.79e-04
+  Epoch 100/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=5.01e-04
+  Epoch 110/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=4.22e-04
+  Epoch 120/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=3.46e-04
+  Epoch 130/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=2.74e-04
+  Epoch 140/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=2.07e-04
+  Epoch 150/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=1.47e-04
+  Epoch 160/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=9.64e-05
+  Epoch 170/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=5.54e-05
+  Epoch 180/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=2.54e-05
+  Epoch 190/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=7.15e-06
+  Epoch 200/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=1.00e-06
+
+  Best val_loss=0.000001 → loaded
+  Train : loss=0.0000 acc=1.0000 (100.00%)
+  Val   : loss=0.0000 acc=1.0000 (100.00%)
+  Test  : loss=8.1493 acc=0.3586 (35.86%)
+
+  Classification Report (test=CWRU):
+              precision    recall  f1-score   support
+
+    Baseline     0.0000    0.0000    0.0000       237
+  Inner Race     0.0032    0.0011    0.0016       941
+  Outer Race     0.4873    0.5985    0.5372      1756
+
+    accuracy                         0.3586      2934
+   macro avg     0.1635    0.1999    0.1796      2934
+weighted avg     0.2927    0.3586    0.3220      2934
+
+  [Saved] D:\Do_An\Source\Software\saved_models\S4_mfpt_to_cwru\training_curves.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S4_mfpt_to_cwru\confusion_matrix.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S4_mfpt_to_cwru\lr_schedule.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S4_mfpt_to_cwru\final_metrics.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S4_mfpt_to_cwru\classification_report.txt
+  [Saved] D:\Do_An\Source\Software\saved_models\S4_mfpt_to_cwru\training_results.json
+  Đã lưu → D:\Do_An\Source\Software\saved_models\S4_mfpt_to_cwru
+
+=================================================================
+  S5_MFPT_TO_MFPT  |  device=cuda
+=================================================================
+  Train (478, 2048)  Val (171, 2048)  Test (241, 2048)
+  num_classes=3  train_labels=[0, 1, 2]  test_labels=[0, 1, 2]
+  Trainable params: 552,515
+  class_weights: [1.5195982456207275, 0.9681192636489868, 0.8164966106414795]
+
+  Epochs: 200  Batch: 64  LR: 0.001
+  Epoch   1/200 | train loss=0.7873 acc=0.8305 | val loss=0.9501 acc=0.5965 | lr=1.00e-03
+  Epoch  10/200 | train loss=0.0010 acc=1.0000 | val loss=0.0009 acc=1.0000 | lr=9.94e-04
+  Epoch  20/200 | train loss=0.0014 acc=1.0000 | val loss=0.0003 acc=1.0000 | lr=9.76e-04
+  Epoch  30/200 | train loss=0.0003 acc=1.0000 | val loss=0.0001 acc=1.0000 | lr=9.46e-04
+  Epoch  40/200 | train loss=0.0002 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=9.05e-04
+  Epoch  50/200 | train loss=0.0002 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=8.54e-04
+  Epoch  60/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=7.94e-04
+  Epoch  70/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=7.27e-04
+  Epoch  80/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=6.55e-04
+  Epoch  90/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=5.79e-04
+  Epoch 100/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=5.01e-04
+  Epoch 110/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=4.22e-04
+  Epoch 120/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=3.46e-04
+  Epoch 130/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=2.74e-04
+  Epoch 140/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=2.07e-04
+  Epoch 150/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=1.47e-04
+  Epoch 160/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=9.64e-05
+  Epoch 170/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=5.54e-05
+  Epoch 180/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=2.54e-05
+  Epoch 190/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=7.15e-06
+  Epoch 200/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=1.00e-06
+
+  Best val_loss=0.000004 → loaded
+  Train : loss=0.0000 acc=1.0000 (100.00%)
+  Val   : loss=0.0000 acc=1.0000 (100.00%)
+  Test  : loss=0.0000 acc=1.0000 (100.00%)
+
+  Classification Report (test=MFPT):
+              precision    recall  f1-score   support
+
+    Baseline     1.0000    1.0000    1.0000        69
+  Inner Race     1.0000    1.0000    1.0000        34
+  Outer Race     1.0000    1.0000    1.0000       138
+
+    accuracy                         1.0000       241
+   macro avg     1.0000    1.0000    1.0000       241
+weighted avg     1.0000    1.0000    1.0000       241
+
+  [Saved] D:\Do_An\Source\Software\saved_models\S5_mfpt_to_mfpt\training_curves.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S5_mfpt_to_mfpt\confusion_matrix.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S5_mfpt_to_mfpt\lr_schedule.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S5_mfpt_to_mfpt\final_metrics.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S5_mfpt_to_mfpt\classification_report.txt
+  [Saved] D:\Do_An\Source\Software\saved_models\S5_mfpt_to_mfpt\training_results.json
+  Đã lưu → D:\Do_An\Source\Software\saved_models\S5_mfpt_to_mfpt
+
+=================================================================
+  S6_MFPT_TO_PADERBORN  |  device=cuda
+=================================================================
+  Train (478, 2048)  Val (171, 2048)  Test (1214, 2048)
+  num_classes=3  train_labels=[0, 1, 2]  test_labels=[0, 1, 2]
+  Trainable params: 552,515
+  class_weights: [1.5195982456207275, 0.9681192636489868, 0.8164966106414795]
+
+  Epochs: 200  Batch: 64  LR: 0.001
+  Epoch   1/200 | train loss=0.8213 acc=0.8389 | val loss=0.9901 acc=0.9883 | lr=1.00e-03
+  Epoch  10/200 | train loss=0.0013 acc=1.0000 | val loss=0.0002 acc=1.0000 | lr=9.94e-04
+  Epoch  20/200 | train loss=0.0004 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=9.76e-04
+  Epoch  30/200 | train loss=0.0003 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=9.46e-04
+  Epoch  40/200 | train loss=0.0002 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=9.05e-04
+  Epoch  50/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=8.54e-04
+  Epoch  60/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=7.94e-04
+  Epoch  70/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=7.27e-04
+  Epoch  80/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=6.55e-04
+  Epoch  90/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=5.79e-04
+  Epoch 100/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=5.01e-04
+  Epoch 110/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=4.22e-04
+  Epoch 120/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=3.46e-04
+  Epoch 130/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=2.74e-04
+  Epoch 140/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=2.07e-04
+  Epoch 150/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=1.47e-04
+  Epoch 160/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=9.64e-05
+  Epoch 170/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=5.54e-05
+  Epoch 180/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=2.54e-05
+  Epoch 190/200 | train loss=0.0001 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=7.15e-06
+  Epoch 200/200 | train loss=0.0000 acc=1.0000 | val loss=0.0000 acc=1.0000 | lr=1.00e-06
+
+  Best val_loss=0.000001 → loaded
+  Train : loss=0.0000 acc=1.0000 (100.00%)
+  Val   : loss=0.0000 acc=1.0000 (100.00%)
+  Test  : loss=9.4891 acc=0.2422 (24.22%)
+
+  Classification Report (test=PADERBORN):
+              precision    recall  f1-score   support
+
+    Baseline     0.4439    0.7037    0.5444       405
+  Inner Race     0.0000    0.0000    0.0000       405
+  Outer Race     0.0226    0.0223    0.0224       404
+
+    accuracy                         0.2422      1214
+   macro avg     0.1555    0.2420    0.1889      1214
+weighted avg     0.1556    0.2422    0.1891      1214
+
+  [Saved] D:\Do_An\Source\Software\saved_models\S6_mfpt_to_paderborn\training_curves.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S6_mfpt_to_paderborn\confusion_matrix.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S6_mfpt_to_paderborn\lr_schedule.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S6_mfpt_to_paderborn\final_metrics.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S6_mfpt_to_paderborn\classification_report.txt
+  [Saved] D:\Do_An\Source\Software\saved_models\S6_mfpt_to_paderborn\training_results.json
+  Đã lưu → D:\Do_An\Source\Software\saved_models\S6_mfpt_to_paderborn
+  [SKIP] S7 (paderborn → cwru)
+
+=================================================================
+  S8_PADERBORN_TO_MFPT  |  device=cuda
+=================================================================
+  Train (5670, 2048)  Val (1215, 2048)  Test (241, 2048)
+  num_classes=3  train_labels=[0, 1, 2]  test_labels=[0, 1, 2]
+  Trainable params: 552,515
+  class_weights: [1.0, 1.0, 1.0]
+
+  Epochs: 200  Batch: 64  LR: 0.001
+  Epoch   1/200 | train loss=0.3031 acc=0.8765 | val loss=0.1071 acc=0.9564 | lr=1.00e-03
+  Epoch  10/200 | train loss=0.0242 acc=0.9926 | val loss=0.0330 acc=0.9868 | lr=9.94e-04
+  Epoch  20/200 | train loss=0.0002 acc=1.0000 | val loss=0.0056 acc=0.9984 | lr=9.76e-04
+  Epoch  30/200 | train loss=0.0003 acc=1.0000 | val loss=0.0084 acc=0.9975 | lr=9.46e-04
+  Epoch  40/200 | train loss=0.0005 acc=1.0000 | val loss=0.0030 acc=0.9992 | lr=9.05e-04
+  Epoch  50/200 | train loss=0.0008 acc=0.9998 | val loss=0.0270 acc=0.9934 | lr=8.54e-04
+  Epoch  60/200 | train loss=0.0002 acc=1.0000 | val loss=0.0062 acc=0.9975 | lr=7.94e-04
+  Epoch  70/200 | train loss=0.0150 acc=0.9938 | val loss=0.0033 acc=0.9984 | lr=7.27e-04
+  Epoch  80/200 | train loss=0.0000 acc=1.0000 | val loss=0.0035 acc=0.9992 | lr=6.55e-04
+  Epoch  90/200 | train loss=0.0024 acc=0.9989 | val loss=0.0269 acc=0.9934 | lr=5.79e-04
+  Epoch 100/200 | train loss=0.0000 acc=1.0000 | val loss=0.0093 acc=0.9984 | lr=5.01e-04
+  Epoch 110/200 | train loss=0.0000 acc=1.0000 | val loss=0.0106 acc=0.9984 | lr=4.22e-04
+  Epoch 120/200 | train loss=0.0000 acc=1.0000 | val loss=0.0144 acc=0.9975 | lr=3.46e-04
+  Epoch 130/200 | train loss=0.0000 acc=1.0000 | val loss=0.0104 acc=0.9975 | lr=2.74e-04
+  Epoch 140/200 | train loss=0.0000 acc=1.0000 | val loss=0.0110 acc=0.9984 | lr=2.07e-04
+  Epoch 150/200 | train loss=0.0000 acc=1.0000 | val loss=0.0194 acc=0.9967 | lr=1.47e-04
+  Epoch 160/200 | train loss=0.0000 acc=1.0000 | val loss=0.0142 acc=0.9967 | lr=9.64e-05
+  Epoch 170/200 | train loss=0.0000 acc=1.0000 | val loss=0.0167 acc=0.9975 | lr=5.54e-05
+  Epoch 180/200 | train loss=0.0000 acc=1.0000 | val loss=0.0162 acc=0.9975 | lr=2.54e-05
+  Epoch 190/200 | train loss=0.0000 acc=1.0000 | val loss=0.0151 acc=0.9975 | lr=7.15e-06
+  Epoch 200/200 | train loss=0.0000 acc=1.0000 | val loss=0.0170 acc=0.9975 | lr=1.00e-06
+
+  Best val_loss=0.000785 → loaded
+  Train : loss=0.0001 acc=1.0000 (100.00%)
+  Val   : loss=0.0008 acc=1.0000 (100.00%)
+  Test  : loss=17.0535 acc=0.0996 (9.96%)
+
+  Classification Report (test=MFPT):
+              precision    recall  f1-score   support
+
+      Normal     0.1231    0.3478    0.1818        69
+  Inner Race     0.0000    0.0000    0.0000        34
+  Outer Race     0.0000    0.0000    0.0000       138
+
+    accuracy                         0.0996       241
+   macro avg     0.0410    0.1159    0.0606       241
+weighted avg     0.0352    0.0996    0.0521       241
+
+  [Saved] D:\Do_An\Source\Software\saved_models\S8_paderborn_to_mfpt\training_curves.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S8_paderborn_to_mfpt\confusion_matrix.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S8_paderborn_to_mfpt\lr_schedule.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S8_paderborn_to_mfpt\final_metrics.png
+  [Saved] D:\Do_An\Source\Software\saved_models\S8_paderborn_to_mfpt\classification_report.txt
+  [Saved] D:\Do_An\Source\Software\saved_models\S8_paderborn_to_mfpt\training_results.json
+  Đã lưu → D:\Do_An\Source\Software\saved_models\S8_paderborn_to_mfpt
+  [SKIP] S9 (paderborn → paderborn)
+
+=================================================================
+  KẾT QUẢ CÁC SCENARIO
+=================================================================
+  S2: train CWRU       test MFPT       → Test Accuracy = 0.00%
+  S4: train MFPT       test CWRU       → Test Accuracy = 35.86%
+  S5: train MFPT       test MFPT       → Test Accuracy = 100.00%
+  S6: train MFPT       test PADERBORN  → Test Accuracy = 24.22%
+  S8: train PADERBORN  test MFPT       → Test Accuracy = 9.96%
+=================================================================
