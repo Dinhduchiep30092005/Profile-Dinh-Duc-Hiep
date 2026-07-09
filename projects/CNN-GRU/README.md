@@ -1,6 +1,6 @@
 # CNN-GRU — Bearing Fault Diagnosis (Chẩn đoán hư hỏng vòng bi bằng CNN-GRU)
 
-> **Lưu ý về repo này:** Đây là bản *source code* của đồ án, được đẩy lên từ một dự án lớn hơn nhiều. Các thư mục dữ liệu thô/đã xử lý (`Data/`, `Data_test/`, `processed_data/`, `processed_data_std/`) **không được đưa lên GitHub** vì tổng dung lượng lên tới hơn **25GB**, vượt xa giới hạn của GitHub (100MB/file). File này mô tả lại toàn bộ dự án — bao gồm cả phần dữ liệu — để người xem hiểu được bức tranh đầy đủ dù không thấy các thư mục đó trong repo.
+> **Lưu ý về repo này:** Đây là bản *source code* của project, được đẩy lên từ một dự án lớn hơn nhiều. Các thư mục dữ liệu thô/đã xử lý (`Data/`, `Data_test/`, `processed_data/`, `processed_data_std/`) **không được đưa lên GitHub** vì tổng dung lượng lên tới hơn **25GB**, vượt xa giới hạn của GitHub (100MB/file). File này mô tả lại toàn bộ dự án — bao gồm cả phần dữ liệu — để người xem hiểu được bức tranh đầy đủ dù không thấy các thư mục đó trong repo.
 
 ## 1. Giới thiệu
 
